@@ -1,0 +1,22 @@
+{
+  "name": "UET SUBMITER",
+  "description": "My First Chrome Extension",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Auto Login Wifi"
+  },
+  "content_scripts": [
+  		{
+  			"matches": ["https://fw.uet.vnu.edu.vn:8003/*"],
+  			"js": ["content.js"]
+  		}
+  ],
+  "permissions": [
+  	"tabs",
+    "storage",
+    "activeTab"
+  ]
+
+}
